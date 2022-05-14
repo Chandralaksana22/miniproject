@@ -1,0 +1,11 @@
+query MyQuery {
+  kos(limit: 4) {
+    id
+    nama
+    tipe
+    sisa
+    thumbnail
+    alamat
+    harga
+  }
+}

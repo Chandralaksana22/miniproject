@@ -1,0 +1,18 @@
+query MyQuery ($id:uuid!) {
+  kos_by_pk(id: $id) {
+    thumbnail
+    pict1
+    pict2
+    pict3
+    pict4
+    nama
+    Kamar_mandi_dalam
+    Kamar_mandi_luar
+    Kulkas
+    Lemari
+    Tv
+    dapur
+    laundry
+    wifi
+  }
+}
