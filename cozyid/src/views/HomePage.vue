@@ -63,7 +63,14 @@
             <h6 class="text-muted">Dapatkan kosan dan langsung sewa di Cozy.Id</h6>
           </div>
           <div class="mt-5">
-            <h6 class="mb-3"><strong>Rekomendasi</strong></h6>
+            <b-row>
+              <b-col cols="6" md="6">
+                <h6 class="mb-3"><strong>Rekomendasi</strong></h6>
+              </b-col>
+              <b-col cols="6" md="6" class="text-right">
+                <b-button class="mb-3 border-0" to="/AllKosPage" size="sm"  variant="link" >Lihat Selengkapnya</b-button>
+              </b-col>
+            </b-row>
           </div>
             <b-row class="mb-5">
               <b-col cols="6" md="3" class="mb-3" v-for="kos in data.kos" :key="kos.id">

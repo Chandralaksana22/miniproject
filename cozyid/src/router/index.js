@@ -2,11 +2,13 @@ import Vue from "vue";
 import VuerRouter from "vue-router";
 import Beranda from "@/views/HomePage";
 import DetailPage from "@/views/DetailPage";
+import AllKos from "@/views/AllKosPage";
 import Default from "@/layouts/default.vue";
 import Kontak from "@/views/KontakPage";
 import Discount from "@/views/DiscountPage";
 import About from "@/views/AboutPage";
 import Login from "@/views/LoginPage";
+
 
 import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
 
@@ -49,6 +51,11 @@ const routes = [
         path:"/DiscountPage",
         name:"DiscountPage",
         component: Discount,
+      },
+      {
+        path:"/AllKosPage",
+        name:"AllKosPage",
+        component: AllKos,
       }
     ]
     

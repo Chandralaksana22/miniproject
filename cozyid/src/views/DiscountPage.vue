@@ -1,6 +1,6 @@
 <template>
         <ApolloQuery
-          :query="require ('../graphql/getDisc.gql')"
+          :query="require ('../graphql/getAllDisc.gql')"
         >
           <template v-slot="{ result: { loading, error, data } }">
             <!-- Loading -->

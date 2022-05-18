@@ -44,7 +44,7 @@
                 <b-col cols="6" md="6" class="text-right">
                   <h6 class="mr-4"><strong>Rp. {{data.kos_by_pk.harga}} / Bulan</strong></h6>
                   <h6 class="mb-3 size mr-4" style="color:#00AFEF" v-if="data.kos_by_pk.diskon">Harga Diskon {{data.kos_by_pk.harga_diskon}}</h6>
-                  <b-button class="mr-4 mt-n3 btn-sm" variant="primary">Pesan Kos Sekarang</b-button>
+                  <b-button class="mr-4 mt-n2 btn-sm" variant="primary">Pesan Kos Sekarang</b-button>
                   
                 </b-col>
               </b-row>
@@ -53,11 +53,17 @@
         <b-card class="mt-2 shadow">
           <h6 class="mb-3 ml-4"><strong>Review</strong></h6>
           <b-row class="ml-2 mr-2"> 
-            <b-col cols="12" mb="6" class="mb-2" v-for="kos_by_pk in data.kos_by_pk.comments" :key="kos_by_pk">
-              <b-card class="shadow">
-                <b-img left :src="kos_by_pk.foto" class="mr-3 mt-2" rounded="circle" alt="Circle image"></b-img>
-                <h6 class="mt-3">{{kos_by_pk.nama}}</h6>
-                <p> <small>{{kos_by_pk.komentar}}</small></p>
+            <b-col c cols="12" md="6" mb="6" class="mb-2 d-flex" v-for="kos_by_pk in data.kos_by_pk.comments" :key="kos_by_pk">
+              <b-card class="shadow flex-fill">
+                <b-row>
+                  <b-col cols="6" md="4">
+                    <b-img :src="kos_by_pk.foto" class="mr-3 mt-2" style="max-width:104px ; height: 104px;" rounded="circle" alt="Circle image"></b-img>
+                  </b-col>
+                  <b-col cols="6" md="8">
+                    <h6 class="mt-3">{{kos_by_pk.nama}}</h6>
+                    <p> <small>{{kos_by_pk.komentar}}</small></p>
+                  </b-col>
+                </b-row>
               </b-card>
             </b-col>
           </b-row>

@@ -16,6 +16,7 @@
                             <b-form class="ml-5 mr-5" >
                             <strong><b-form-group
                                 label="Nama Lengkap:"
+                                class="textnavy"
                             >
                                 <b-form-input
                                 id="input-1"
@@ -27,7 +28,7 @@
                                 ></b-form-input>
                             </b-form-group></strong>
 
-                            <strong><b-form-group label="Alamat Email :">
+                            <strong><b-form-group label="Alamat Email :" class="textnavy">
                                 <b-form-input
                                 id="input-2"
                                 placeholder="Alamat Email"
@@ -37,7 +38,7 @@
                                 ></b-form-input>
                             </b-form-group></strong>
 
-                            <strong><b-form-group  id="input-group-3" label="Saran dan Masukan:" label-for="input-3">
+                            <strong><b-form-group  id="input-group-3" class="textnavy" label="Saran dan Masukan:" label-for="input-3">
                             <b-form-textarea
                                     id="textarea-rows"
                                     placeholder="Saran dan Masukan"
@@ -58,5 +59,8 @@
 <style>
 .size{
   font-size: 14px;
+}
+.textnavy{
+    color:#0E185F;
 }
 </style>

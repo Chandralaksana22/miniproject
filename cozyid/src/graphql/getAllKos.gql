@@ -1,5 +1,5 @@
 query MyQuery {
-  kos(limit: 8) {
+  kos {
     id
     nama
     tipe
