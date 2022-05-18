@@ -1,5 +1,5 @@
 query MyQuery {
-  kos(limit: 4) {
+  kos(where: {diskon: {_eq: true}},limit:6) {
     id
     nama
     tipe
@@ -7,6 +7,7 @@ query MyQuery {
     thumbnail
     alamat
     harga
+    harga_diskon
     Kamar_mandi_dalam
     Kamar_mandi_luar
     Kulkas

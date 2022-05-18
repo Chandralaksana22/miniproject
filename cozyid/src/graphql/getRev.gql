@@ -1,0 +1,9 @@
+query MyQuery {
+  review_cozy (limit: 3) {
+    id
+    foto
+    komentar
+    nama
+    pekerjaan
+  }
+}

@@ -3,6 +3,10 @@ import VuerRouter from "vue-router";
 import Beranda from "@/views/HomePage";
 import DetailPage from "@/views/DetailPage";
 import Default from "@/layouts/default.vue";
+import Kontak from "@/views/KontakPage";
+import Discount from "@/views/DiscountPage";
+import About from "@/views/AboutPage";
+import Login from "@/views/LoginPage";
 
 import { BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
 
@@ -30,8 +34,29 @@ const routes = [
         path:"/DetailPage/:id",
         name:"DetailPage",
         component: DetailPage,
+      },
+      {
+        path:"/AboutPage",
+        name:"AboutPage",
+        component: About,
+      },
+      {
+        path:"/KontakPage",
+        name:"KontakPage",
+        component: Kontak,
+      },
+      {
+        path:"/DiscountPage",
+        name:"DiscountPage",
+        component: Discount,
       }
     ]
+    
+  },
+  {
+    path:"/LoginPage",
+    name:"LoginPage",
+    component: Login,
   },
 ];
 const router = new VuerRouter({

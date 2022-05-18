@@ -1,0 +1,10 @@
+query MyQuery ($koment_id:uuid!) {
+  comments_by_pk(koment_id: $koment_id) {
+    foto
+    id
+    koment_id
+    komentar
+    nama
+    pekerjaan
+  }
+}
